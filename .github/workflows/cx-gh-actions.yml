@@ -14,6 +14,7 @@
 # For full documentation, including a list of all inputs, please refer to the README https://github.com/checkmarx-ts/checkmarx-cxflow-github-action
 #
 # MFCx Notes: https://github.com/marketplace/actions/checkmarx-cxflow-action?version=v1.4
+# 
 
 name: Checkmarx SAST Scan
 on:
@@ -31,12 +32,14 @@ jobs:
     - name: Checkmarx CxFlow Action
       uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.4 #Github Action version
       with:
-        project: MFCx654321 # <-- Insert Checkmarx SAST Project Name ORIG: ${{ secrets.CHECKMARX_PROJECT }}
+        project: JavaVulnLab-GH-Actions # <-- Insert Checkmarx SAST Project Name ORIG: ${{ secrets.CHECKMARX_PROJECT }}
         team: /CxServer    # /CxServer/SP/America/checkmarx.com - 11506 # ${{ secrets.CHECKMARX_TEAMS }}
         checkmarx_url: ${{ secrets.CHECKMARX_URL }} # To be stored in GitHub Secrets.
         checkmarx_username: ${{ secrets.CHECKMARX_USER }} # To be stored in GitHub Secrets.
         checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }} # To be stored in GitHub Secrets.
         checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }} # To be stored in GitHub Secrets.
+        preset: High and Medium
+        incremental: false
         break_build: false
         scanners: sast
         bug_tracker: Sarif
