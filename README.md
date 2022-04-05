@@ -1,4 +1,6 @@
-This is a "Vulnerable" Web Application developed by Cyber Security and Privacy Foundation(www.cysecurity.org). This app is intended for the Java Programmers and other people who wish to learn about Web application vulnerabilities and write secure code.123
+![](https://github.com/CheckmarxDev/NodeGoat-test/workflows/cx/badge.svg)
+
+This is a "Vulnerable" Web Application developed by Cyber Security and Privacy Foundation(www.cysecurity.org). This app is intended for the Java Programmers and other people who wish to learn about Web application vulnerabilities and write secure code.123456
 
 **The full course content is now available on Github for free:**
 
@@ -14,6 +16,7 @@ https://www.udemy.com/hacking-securing-java-web-programming/
  
 How to Use/Setup ?
 -------------
+
 
 **Method 1.Super Very Easiest Method: Docker**
   The easiest way to use Java Vulnerable is using Docker which set up everything for you with 1 command line
