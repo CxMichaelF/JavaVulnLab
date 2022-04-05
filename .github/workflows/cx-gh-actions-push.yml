@@ -22,6 +22,7 @@ on:
     branches:
       - main
       - master
+      - dev
     
 jobs:
   build:
