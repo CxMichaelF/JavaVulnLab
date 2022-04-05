@@ -40,7 +40,6 @@ jobs:
         checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }} # To be stored in GitHub Secrets.
         preset: High and Medium
         incremental: false
-        force-scan: true
         break_build: false
         scanners: sast
         bug_tracker: Sarif
